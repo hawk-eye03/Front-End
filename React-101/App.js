@@ -1,6 +1,9 @@
 // heading (React.createElement) is just an object (js object) (which has attributes and children) and not an html element
-import React from "react";
-import ReactDOM from "react-dom/client";
+const heading = React.createElement(
+  "h1",
+  { id: "heading", xyz: "abc" },
+  "Hello world from React!"
+);
 // Copied from chatGPT
 /*
 In React, the third argument (children) can take various forms:

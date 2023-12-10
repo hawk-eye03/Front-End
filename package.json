@@ -1,0 +1,30 @@
+{
+  "name": "namastey-react",
+  "version": "1.0.0",
+  "description": "This is my first React App",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hawk-eye03/Front-End.git"
+  },
+  "author": "Shreyash Tripathi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hawk-eye03/Front-End/issues"
+  },
+  "homepage": "https://github.com/hawk-eye03/Front-End#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
