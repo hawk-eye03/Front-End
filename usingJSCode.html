@@ -1,0 +1,30 @@
+<!-- wrote boiler plate code by just doing (EMMET) HTML:5 -->
+<!-- Q1. How does a browser understand that what are these things like document.createElement, document.getElementById?
+    Ans. Browser has an inbuilt engine to understand javascript code (things like document, createElement, getElementById..)
+    Q2. Does browser understand react code?
+    Ans. No, it doesn't, React libraries are hosted on CDNs (content delivery network) and we fetch react libraries from there
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namastey React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- To write this javascript code inside html we use script tag -->
+    <script>
+      // in Normal html we could have directly written <h1> Some content </h1> but doing it with javascript we need
+      // to use documet.createElement
+      // To create html equivalent <h1> tag (through javascript) we use document.createElement("h1")
+      const heading = document.createElement("h1");
+      // heading.innerHTML is used to populate content under heading
+      heading.innerHTML = "Hello World from Javascript!";
+      //  Now we need to put this tag under root to do this we get the root element by doing document.getElementById("root")
+      const root = document.getElementById("root");
+      // append child is a method on every html element, this will append heading in root
+      root.appendChild(heading);
+    </script>
+  </body>
+</html>
